@@ -1,24 +1,36 @@
-// cirquetrackpad.overlay
+#include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
-        zmk,kscan = &default_kscan;
+        zmk,kscan = &kscan0;
+        zmk,matrix_transform = &default_transform;
     };
 
-    default_kscan: kscan {
-        compatible = "zmk,kscan-gpio-direct";
-        label = "default_kscan";
+    default_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+		columns = <6>;
+		rows = <1>;
 
-        input-gpios
-            = <&xiao_d 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Row A from the schematic file
-            //, <&xiao_d 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Row B from the schematic file
-            //, <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Row C from the schematic file
-            ;
-
+		map = <
+RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) 
+		>;
     };
+
+   kscan0: kscan {        
+		compatible = "zmk,kscan-gpio-matrix";
+		label = "KSCAN";
+
+		diode-direction = "col2row";
+row-gpios= <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // D4
+				;
+ col-gpios
+        = <&pro_micro 10 (GPIO_ACTIVE_HIGH)> // COL0 
+        , <&pro_micro 16 (GPIO_ACTIVE_HIGH)> // COL1 
+        , <&pro_micro 14 (GPIO_ACTIVE_HIGH)> // COL2 
+        ;
 };
 
-&xiao_i2c {
+i2c0 {
     status = "okay";
     trackpad@2a {
 	    compatible = "cirque,pinnacle";
