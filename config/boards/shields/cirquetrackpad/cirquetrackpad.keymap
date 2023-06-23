@@ -18,9 +18,8 @@
         DEFAULT {
             label = "MSE";
             bindings = <
-				&kp R	&kp S	&kp N	&kp I   &kp A	&kp O	&kp T
-				>;
-			sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
-			};
-		};
+&bt BT_CLR  &bt BT_SEL 0  &out OUT_BLE
+            >;
+        };
+    };
 };
