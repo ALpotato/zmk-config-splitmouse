@@ -38,7 +38,7 @@ RC(0,0) RC(0,1) RC(0,2)
 	    compatible = "cirque,pinnacle";
 	    reg = <0x2a>;
 	    label = "Cirque_Trackpad";
-        dr-gpios = <&promicro 4	GPIO_ACTIVE_HIGH>;
+        dr-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
 	    //rotate-90;
 	    //sleep;
 	    //no-taps;
