@@ -1,6 +1,16 @@
-if SHIELD_CIRQUETRACKPAD
+if SHIELD_CIRQUETRACKPAD_LEFT
 
-config ZMK_KEYBOARD_NAME
-    default "Cirque Trackpad"
+    config ZMK_KEYBOARD_NAME
+        default "Cirque Trackpad"
+    
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
+
+endif
+
+if SHIELD_CIRQUETRACKPAD_LEFT || SHIELD_CIRQUETRACKPAD_RIGHT
+
+config ZMK_SPLIT
+    default y
 
 endif
