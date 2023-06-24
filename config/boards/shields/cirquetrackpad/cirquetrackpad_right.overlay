@@ -16,10 +16,8 @@
 	status = "okay";
 	compatible = "nordic,nrf-twi";
 	sda-pin = <15>;
-	scl-pin = <17>;
-    
-trackpad@2A {
-	status = "okay";
+	scl-pin = <17>;    
+ trackpad@2A {
 	compatible = "cirque,pinnacle";
 	reg = <0x2A>;
 	label = "Cirque_Trackpad";
