@@ -14,7 +14,7 @@
 
 &i2c0 {
     status = "okay";
-    cirque_trackpad@2A {
+    trackpad@2A {
 	    compatible = "cirque,pinnacle";
 	    reg = <0x2A>;
 	    label = "Cirque_Trackpad";
