@@ -1,2 +1,4 @@
 config SHIELD_CIRQUETRACKPAD
-    def_bool $(shields_list_contains,cirquetrackpad)
+    def_bool $(shields_list_contains,cirquetrackpad_left)
+config SHIELD_CIRQUETRACKPAD
+    def_bool $(shields_list_contains,cirquetrackpad_right)
