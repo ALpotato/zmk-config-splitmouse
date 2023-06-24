@@ -14,9 +14,9 @@
 
 &i2c0 {
     status = "okay";
-    cirque_trackpad@2a {
+    cirque_trackpad@2A {
 	    compatible = "cirque,pinnacle";
-	    reg = <0x2a>;
+	    reg = <0x2A>;
 	    label = "Cirque_Trackpad";
         dr-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
 	    //rotate-90;
