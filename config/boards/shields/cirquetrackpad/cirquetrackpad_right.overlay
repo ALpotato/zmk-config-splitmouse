@@ -13,11 +13,16 @@
     };
 
 &i2c0 {
-    status = "okay";
-    trackpad@2A {
-	    compatible = "cirque,pinnacle";
-	    reg = <0x2A>;
-	    label = "Cirque_Trackpad";
+	status = "okay";
+	compatible = "nordic,nrf-twi";
+	sda-pin = <15>;
+	scl-pin = <17>;
+    
+trackpad@2A {
+	status = "okay";
+	compatible = "cirque,pinnacle";
+	reg = <0x2A>;
+	label = "Cirque_Trackpad";
         dr-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
 	    //rotate-90;
 	    //sleep;
