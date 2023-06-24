@@ -14,4 +14,7 @@
 ---
 include:
   - board: nrfmicro_13
-    shield: cirquetrackpad
+    shield: cirquetrackpad_left
+include:
+  - board: nrfmicro_13
+    shield: cirquetrackpad_right
