@@ -1,4 +1,4 @@
-if SHIELD_CIRQUETRACKPAD_LEFT
+if SHIELD_CIRQUETRACKPAD_RIGHT
 
 config ZMK_KEYBOARD_NAME
         default "Cirque Trackpad"
