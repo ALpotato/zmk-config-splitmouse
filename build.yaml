@@ -17,3 +17,5 @@ include:
     shield: cirquetrackpad_left
   - board: nrfmicro_13
     shield: cirquetrackpad_right
+  - board: nrfmicro_13
+    shield: settings_reset
