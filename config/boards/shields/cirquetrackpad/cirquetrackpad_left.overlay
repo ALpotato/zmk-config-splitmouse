@@ -1,0 +1,7 @@
+#include "cirquetrackpad.dtsi"
+
+&kscan0 {
+       row-gpios
+           = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+           ;
+    };
