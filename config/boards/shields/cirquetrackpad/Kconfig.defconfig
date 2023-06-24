@@ -13,4 +13,7 @@ if SHIELD_CIRQUETRACKPAD_LEFT || SHIELD_CIRQUETRACKPAD_RIGHT
 config ZMK_SPLIT
     default y
 
+config I2C
+    default y
+
 endif
