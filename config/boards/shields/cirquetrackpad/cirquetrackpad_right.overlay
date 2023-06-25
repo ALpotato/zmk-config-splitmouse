@@ -1,6 +1,5 @@
 #include "cirquetrackpad.dtsi"
 
-/ {
 &default_transform {
 	col-offset = <3>;
 };
@@ -12,7 +11,6 @@
             , <&pro_micro 14 GPIO_ACTIVE_HIGH>
             ;
     };
-};
 
 &i2c0 {
 	status = "okay";
