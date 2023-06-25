@@ -1,5 +1,6 @@
 #include "cirquetrackpad.dtsi"
 
+/ {
 &default_transform {
 	col-offset = <3>;
 };
@@ -11,15 +12,16 @@
             , <&pro_micro 14 GPIO_ACTIVE_HIGH>
             ;
     };
+};
 
 &i2c0 {
 	status = "okay";
 	compatible = "nordic,nrf-twi";
 	sda-pin = <15>;
 	scl-pin = <17>;    
- trackpad@2A {
+ trackpad@2a {
 	compatible = "cirque,pinnacle";
-	reg = <0x2A>;
+	reg = <0x2a>;
 	label = "Cirque_Trackpad";
         dr-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
 	    //rotate-90;
