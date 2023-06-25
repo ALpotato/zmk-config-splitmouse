@@ -13,9 +13,9 @@
     };
 
 &i2c0 {
-	status = "okay";    
-};        
+	status = "okay";            
 
 trackpad {
 	status = "okay";
+  };
 };
