@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: jgreel
-      url-base: https://github.com/jgreel  
+    - name: ALpotato
+      url-base: https://github.com/ALpotato
   projects:
      - name: zmk
-       remote: jgreel
-       revision: mouse-ftc-cirque
+       remote: ALpotato
+       revision: ptdevice-cirque
        import: app/west.yml
   self:
     path: config
