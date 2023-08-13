@@ -1,17 +1,11 @@
 manifest:
   remotes:
     - name: jgreel
-      url-base: https://github.com/jgreel
-#    - name: zmkfirmware
-#      url-base: https://github.com/crides      
+      url-base: https://github.com/jgreel  
   projects:
      - name: zmk
        remote: jgreel
        revision: mouse-ftc-cirque
        import: app/west.yml
-#    - name: zmk
-#      remote: zmkfirmware
-#      revision: fusion-led-c-config
-#      import: app/west.yml
   self:
     path: config

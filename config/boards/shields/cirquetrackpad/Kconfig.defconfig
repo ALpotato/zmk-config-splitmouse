@@ -1,19 +1,6 @@
-if SHIELD_CIRQUETRACKPAD_RIGHT
+if SHIELD_CIRQUETRACKPAD
 
 config ZMK_KEYBOARD_NAME
-        default "Cirque Trackpad"
-    
-config ZMK_SPLIT_ROLE_CENTRAL
-        default y
-
-endif
-
-if SHIELD_CIRQUETRACKPAD_LEFT || SHIELD_CIRQUETRACKPAD_RIGHT
-
-config ZMK_SPLIT
-    default y
-
-config I2C
-    default y
+    default "Cirque Trackpad"
 
 endif
