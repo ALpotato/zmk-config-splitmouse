@@ -21,7 +21,7 @@ RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5)
 
         diode-direction = "col2row";
         row-gpios
-           = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+           = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
            ;
 	};
 };
@@ -32,7 +32,7 @@ RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5)
 	compatible = "cirque,pinnacle";
 	reg = <0x2a>;
 	label = "Cirque_Trackpad";
-        dr-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
+        dr-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
 	    //rotate-90;
 	    //sleep;
 	    //no-taps;
