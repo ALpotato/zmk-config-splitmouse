@@ -1,0 +1,18 @@
+if SHIELD_CORNE_CIRQUE_RIGHT
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
+
+endif
+
+if SHIELD_CORNE_CIRQUE_LEFT || SHIELD_CORNE_CIRQUE_RIGHT
+
+    config ZMK_KEYBOARD_NAME
+        default "Corne Cirque"
+
+    config ZMK_SPLIT
+        default y
+
+    config ZMK_USB
+        default y
+
+endif
