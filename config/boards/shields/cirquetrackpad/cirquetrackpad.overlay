@@ -10,6 +10,7 @@
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
+        label = "Matrix-transform";
         columns = <1>;
         rows = <2>;
         // | SW1 |
@@ -22,6 +23,7 @@
 
     default_kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
+        label = "MSE";
         diode-direction = "col2row";
         col-gpios = <&pro_micro 14 GPIO_ACTIVE_HIGH>;
         row-gpios = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
