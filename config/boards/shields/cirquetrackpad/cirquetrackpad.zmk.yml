@@ -4,7 +4,7 @@ name: Cirque Trackpad
 type: shield
 url: https://github.com/jgreel/wearable_cirque_pim447
 requires:
-  - seeeduino_xiao_ble
+  - nice_nano_v2
   - cirque pinnacle trackpad
 features:
   - mouse
